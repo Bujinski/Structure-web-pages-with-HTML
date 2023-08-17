@@ -1,0 +1,27 @@
+body {
+    background-color:#EFE6CD;
+}
+
+p {
+    padding: 10px;
+}
+
+#pic1 {
+    width: 70%;
+}
+#pic2 {
+    width: 66%;
+}
+#pic3 {
+    width: 60%;
+}
+#pic4 {
+    width: 60%;
+}
+
+.named {color:#3E6F6B;}
+
+section {
+    display: inline-block;
+    width: 33%;
+}
