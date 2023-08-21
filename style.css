@@ -25,3 +25,11 @@ section {
     display: inline-block;
     width: 33%;
 }
+
+.lower {
+
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
