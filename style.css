@@ -8,6 +8,7 @@ p {
 
 #pic1 {
     width: 70%;
+    
 }
 #pic2 {
     width: 66%;
@@ -21,15 +22,47 @@ p {
 
 .named {color:#3E6F6B;}
 
-section {
+/* section {
     display: inline-block;
     width: 33%;
-}
+    vertical-align: top;
+    align-items: flex-start;
+} */
 
-.lower {
-
-}
 nav ul li {
     list-style: none;
     display: inline-block;
 }
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    width: 30%;
+    /* border: 2px solid none; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
