@@ -13,7 +13,14 @@ let theirAnswer = getAnswer();
 console.log(theirAnswer);
 
 //string concatenation
-document.write("Welocome to the store!");
+function greetUser(){
+    document.write("Welcome to the store!");
+}
+
+function specialMessage(){
+    document.write("We glad to have you here!");
+}
+
 
 if (theirAnswer == "yes") {
     alert("Great! Let's find the best one!");
