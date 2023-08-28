@@ -24,19 +24,25 @@ function specialMessage(){
 
 if (theirAnswer == "yes") {
     alert("Great! Let's find the best one!");
+
 } else { 
     alert("No problem, let's find something interesting for you!");
 }
 
+function userLocation(){
 const userLoc = prompt("Do you know where is our location?");
 console.log(userLoc);
+if (userLoc == ""){
+    userLoc = prompt ("Sorry, I definitely want to make sure you can find us..");
+}
+
 
 if (userLoc == "yes") {
     alert("Wonderful, let's see what books we have!");
-} else { 
+} else if (userLoc == "no") { 
     alert("No problem, you can find it by clicking the location link.");
 }
-
+}
 const userFBook = prompt("Have you checked our books of the month?");
 console.log(userFBook);
 
