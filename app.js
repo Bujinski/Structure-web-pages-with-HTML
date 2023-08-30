@@ -3,21 +3,21 @@
 alert("Welcome to the store!");
 
 
-function getAnswer(){
-const userAnswer = prompt("Looking for a great book?");
-return userAnswer; 
+function getAnswer() {
+    const userAnswer = prompt("Looking for a great book?");
+    return userAnswer;
 }
 
-let theirAnswer = getAnswer(); 
+let theirAnswer = getAnswer();
 
 console.log(theirAnswer);
 
 //string concatenation
-function greetUser(){
+function greetUser() {
     document.write("Welcome to the store!");
 }
 
-function specialMessage(){
+function specialMessage() {
     document.write("We glad to have you here!");
 }
 
@@ -25,46 +25,72 @@ function specialMessage(){
 if (theirAnswer == "yes") {
     alert("Great! Let's find the best one!");
 
-} else { 
+} else {
     alert("No problem, let's find something interesting for you!");
 }
 
+// function userLocation() {
+//     let userLoc = prompt("Do you know where is our location?");
+//     console.log(userLoc);
+//     if (userLoc == "") {
+//         userLoc = prompt("Sorry, I definitely want to make sure you can find us. Please, answer yes or no...");
+//     }
+
+//     if (userLoc == "yes") {
+//         alert("Wonderful, let's see what books we have!");
+//     } else if (userLoc == "no") {
+//         alert("No problem, you can find it by clicking the location link.");
+//     }
+// }
 function userLocation(){
-const userLoc = prompt("Do you know where is our location?");
-console.log(userLoc);
-if (userLoc == ""){
-    userLoc = prompt ("Sorry, I definitely want to make sure you can find us..");
+    let userLoc = prompt("Do you know where is our location?");
+
+    while (userLoc !== "yes" && userLoc !== "no") {
+        userLoc = prompt("Sorry, I definitely want to make sure you can find us. Please, answer yes or no...");
+    }
+    if (userLoc === "yes") {
+        alert("Wonderful, let's see what books we have!");
+    } else if (userLoc === "no") {
+        alert("No problem, you can find it by clicking the location link.");
+    }
 }
 
+userLocation();
 
-if (userLoc == "yes") {
-    alert("Wonderful, let's see what books we have!");
-} else if (userLoc == "no") { 
-    alert("No problem, you can find it by clicking the location link.");
+function manyBooks (){
+    let numBooks = prompt ("How many books are you going to read this month? From 1-5?");
+    numBooks = parseInt(numBooks);
+
+    for (let i = 0; i < numBooks; i++){
+        document.write('<img class="loop-img" src="books.jpg" alt="one year books" />');
+    }
 }
-}
-const userFBook = prompt("Have you checked our books of the month?");
-console.log(userFBook);
+// manyBooks();
 
-if (userFBook == "yes") {
-    alert("Great, let's check the bestsellers then!");
-} else { 
-    alert("Great, let's check them now!");
-}
 
-  // ---------------------------------
 
-  // FUNCTIONS //
+//const userFBook = prompt("Have you checked our books of the month?");
+//console.log(userFBook);
 
-function addTwoNumbers() {
-    let num1 = 7;
-    let num2 = 4;
-    let sum = num1 + num2;
-    console.log(sum);
-    return sum; 
-}
+//if (userFBook == "yes") {
+    //alert("Great, let's check the bestsellers then!");
+//} else {
+//    alert("Great, let's check them now!");
+//}
+
+// ---------------------------------
+
+// FUNCTIONS //
+
+//function addTwoNumbers() {
+    // let num1 = 7;
+    // let num2 = 4;
+    // let sum = num1 + num2;
+   //  console.log(sum);
+    // return sum;
+// }
 
 // Invoking it, or calling it
 
-addTwoNumbers();
+// addTwoNumbers();
 
