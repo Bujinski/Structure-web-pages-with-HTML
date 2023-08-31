@@ -46,7 +46,7 @@ function userLocation(){
     let userLoc = prompt("Do you know where is our location?");
 
     while (userLoc !== "Yes" && userLoc !== "No") {
-        userLoc = prompt("Sorry, I definitely want to make sure you can find us. Please, answer yes or no...");
+        userLoc = prompt("Sorry, I definitely want to make sure you can find us. Please, answer Yes or No...");
     }
     if (userLoc === "Yes") {
         alert("Wonderful, let's see what books we have!");
