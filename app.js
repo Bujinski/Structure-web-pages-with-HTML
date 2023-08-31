@@ -22,7 +22,7 @@ function specialMessage() {
 }
 
 
-if (theirAnswer == "Yes") {
+if (theirAnswer == "yes") {
     alert("Great! Let's find the best one!");
 
 } else {
@@ -45,12 +45,12 @@ if (theirAnswer == "Yes") {
 function userLocation(){
     let userLoc = prompt("Do you know where is our location?");
 
-    while (userLoc !== "Yes" && userLoc !== "No") {
-        userLoc = prompt("Sorry, I definitely want to make sure you can find us. Please, answer Yes or No...");
+    while (userLoc !== "yes" && userLoc !== "no") {
+        userLoc = prompt("Sorry, I definitely want to make sure you can find us. Please, answer yes or no...");
     }
-    if (userLoc === "Yes") {
+    if (userLoc === "yes") {
         alert("Wonderful, let's see what books we have!");
-    } else if (userLoc === "No") {
+    } else if (userLoc === "no") {
         alert("No problem, you can find it by clicking the location link.");
     }
 }
