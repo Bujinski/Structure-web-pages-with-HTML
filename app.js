@@ -62,7 +62,7 @@ function manyBooks (){
     numBooks = parseInt(numBooks);
 
     for (let i = 0; i < numBooks; i++){
-        document.write('<img class="loop-img" src="books.jpg" alt="one year books" />');
+        document.write('<img class="loop-img" src="mbook.jpg" alt="one year books" />');
     }
 }
 // manyBooks();
